@@ -1,0 +1,144 @@
+@media screen and (min-width: 428px) {
+  .container {
+    width: 398px;
+  }
+}
+
+@media screen and (max-width: 427px) {
+  .our-team {
+    padding: 96px 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 738px;
+  }
+  /* ========== Main section ========== */
+  .main-section__title {
+    width: 496px;
+    margin: 0 auto 36px auto;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--color__white);
+  }
+  /* ========== Features/Heroes section ========== */
+  .features {
+    gap: 72px 24px;
+  }
+  .features__text {
+    width: 356px;
+  }
+  .features__title {
+    text-align: left;
+  }
+  /* ========== Our team ========== */
+  .our-team > .container {
+    width: 552px;
+  }
+  .our-team {
+    padding: 96px 108px;
+  }
+  .our-team__list {
+    gap: 64px 24px;
+  }
+  /* ========== Customers ========== */
+  .customers > .container {
+    width: 552px;
+  }
+  .customers {
+    padding: 96px 108px;
+  }
+  .customers__list {
+    gap: 72px 24px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    width: 1128px;
+  }
+  /* ========== Main section ========== */
+  .main-section {
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
+  .main-section__title {
+    width: 496px;
+    margin: 0 auto 48px auto;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--color__white);
+  }
+  /* ========== Features/Heroes section ========== */
+  .heroes {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .features__wrapper {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 112px;
+    margin-bottom: 8px;
+    background-color: var(--color__cloud);
+    border-radius: 4px;
+  }
+  .features__title {
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--color__navy-blue);
+  }
+  .features__text {
+    width: 264px;
+  }
+  .features {
+    gap: 24px;
+  }
+  /* ========== What are we doing ========== */
+  .our-work {
+    display: block;
+    padding-bottom: 120px;
+  }
+  .our-work__title {
+    margin-bottom: 72px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--color__navy-blue);
+  }
+  .our-work__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  /* ========== Our team ========== */
+  .our-team > .container {
+    width: 1128px;
+  }
+  .our-team {
+    padding: 120px 15px;
+  }
+  .our-team__list {
+    gap: 24px;
+  }
+  /* ========== Customers ========== */
+  .customers > .container {
+    width: 1128px;
+  }
+  .customers {
+    padding: 120px 15px;
+  }
+}

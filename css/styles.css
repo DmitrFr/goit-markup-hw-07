@@ -63,14 +63,14 @@ body {
 }
 .container {
   width: 100%;
-  max-width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
+  /* max-width: 1158px; */
+  /* padding-left: 15px;
+  padding-right: 15px; */
   margin: 0 auto;
 }
-.section {
+/* .section {
   padding-top: 120px;
-}
+} */
 
 /* ========== hidden elements class ========== */
 .visually-hidden {
@@ -282,18 +282,30 @@ body {
 
 /* ========== Main section ========== */
 .main-section {
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding-top: 112px;
+  padding-bottom: 112px;
   margin: 0 auto;
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url(../images/people.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  max-width: 1440px;
-  height: 600px;
+  /* max-width: 1440px; */
+  /* height: 432px; */
   background-color: var(--color__navy-blue);
 }
 .main-section__title {
+  width: 320px;
+  margin: 0 auto 72px auto;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--color__white);
+}
+/* .main-section__title {
+  DESKTOP
   width: 500px;
   margin: 0 auto 48px auto;
   font-weight: 700;
@@ -302,7 +314,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--color__white);
-}
+} */
 .main-section__button {
   margin: 0 auto;
   background-color: var(--color__iris);
@@ -548,12 +560,20 @@ body {
   color: var(--color__white);
 }
 
-/* ========== Features section ========== */
+/* ========== Features/Heroes section ========== */
+.heroes {
+  padding: 96px 15px 96px 15px;
+}
 .features {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 72px;
 }
 .features__wrapper {
+  display: none;
+}
+/* .features__wrapper {
+  DESKTOP YOBANIY
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -562,25 +582,39 @@ body {
   margin-bottom: 8px;
   background-color: var(--color__cloud);
   border-radius: 4px;
-}
-.features__title {
+} */
+/* .features__title {
+  DESKTOP YOBANIY
   margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--color__navy-blue);
+} */
+.features__title {
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--color__navy-blue);
 }
 .features__text {
-  width: 264px; /*  otherwise, all blocks will be with different sizes, 
+  /* width: 264px;  otherwise, all blocks will be with different sizes, 
                     not per Figma */
+  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  font-size: 16px;
 }
 
 /* ========== What are we doing ========== */
 .our-work {
+  display: none;
+}
+/* .our-work {
   padding-bottom: 120px;
 }
 .our-work__title {
@@ -596,11 +630,14 @@ body {
 .our-work__list {
   display: flex;
   justify-content: space-between;
-}
+} */
 
 /* ========== Our team ========== */
+.our-team > .container {
+  width: 264px;
+}
 .our-team {
-  padding-bottom: 120px;
+  padding: 96px 82px;
   background-color: var(--color__cloud);
 }
 .our-team__title {
@@ -615,7 +652,9 @@ body {
 }
 .our-team__list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 72px;
 }
 .our-team__item {
   background-color: var(--color__white);
@@ -664,8 +703,7 @@ body {
 
 /* ========== Customers ========== */
 .customers {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: 96px 15px;
 }
 .customers__title {
   margin-bottom: 72px;
@@ -679,7 +717,9 @@ body {
 }
 .customers__list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 72px 16px;
 }
 .customers__link {
   display: flex;
