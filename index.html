@@ -22,12 +22,17 @@
     <title>Home</title>
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container">
         <nav>
           <a class="header__logo" href="./index.html"
             ><span class="header__logo--iris">Web</span>Studio</a
           >
+          <button class="menu-mob__open-btn" data-menu-open type="button">
+            <svg class="burger-icon" width="32" height="22">
+              <use href="./images/icons.svg#burger-icon"></use>
+            </svg>
+          </button>
           <ul class="menu">
             <li class="menu__list">
               <a class="menu__list-text current" href="./index.html">Studio</a>
@@ -51,7 +56,73 @@
           </ul>
         </address>
       </div>
-    </header> -->
+      <div class="menu-mob" data-menu>
+        <div>
+          <button class="menu-mob__close-btn" data-menu-close type="button">
+            <svg class="menu-mob__close-ico" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-modal-2"></use>
+            </svg>
+          </button>
+          <nav>
+            <ul class="menu-mob__list">
+              <li class="menu-mob__item">
+                <a class="menu-mob__item-text current" href="./index.html">Studio</a>
+              </li>
+              <li class="menu-mob__item">
+                <a class="menu-mob__item-text" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class="menu-mob__item">
+                <a class="menu-mob__item-text" href="#">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div>
+          <address class="menu-mob__address">
+            <ul class="menu-mob__address-list">
+              <li class="menu-mob__address-item">
+                <a class="menu-mob__address-tel" href="tel:+110001111111">+11 (000) 111-11-11</a>
+              </li>
+              <li class="menu-mob__address-item">
+                <a class="menu-mob__address-text" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="logo__list">
+            <li class="logo__item">
+              <a class="logo__link" href="#">
+                <svg class="logo__icon" width="16" height="16">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="logo__item">
+              <a class="logo__link" href="#">
+                <svg class="logo__icon" width="16" height="16">
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="logo__item">
+              <a class="logo__link" href="#">
+                <svg class="logo__icon" width="16" height="16">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="logo__item">
+              <a class="logo__link" href="#">
+                <svg class="logo__icon" width="16" height="16">
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
     <main>
       <section class="main-section">
         <div class="container">
@@ -172,6 +243,7 @@
           <ul class="our-work__list">
             <li class="our-work__item">
               <img
+                srcset="./images/desktop.jpg 1x, ./images/desktop@2x.jpg 2x"
                 src="./images/desktop.jpg"
                 alt="Desktop version photo"
                 class="our-work__image"
@@ -180,6 +252,7 @@
             </li>
             <li class="our-work__item">
               <img
+                srcset="./images/mobile.jpg 1x, ./images/mobile@2x.jpg 2x"
                 src="./images/mobile.jpg"
                 alt="Mobile version photo"
                 class="our-work__image"
@@ -188,6 +261,7 @@
             </li>
             <li class="our-work__item">
               <img
+                srcset="./images/both.jpg 1x, ./images/both@2x.jpg 2x"
                 src="./images/both.jpg"
                 alt="Desktop and Mobile version photo"
                 class="our-work__image"
@@ -203,6 +277,7 @@
           <ul class="our-team__list">
             <li class="our-team__item">
               <img
+                srcset="./images/markguerrero.jpg 1x, ./images/markguerrero@2x.jpg 2x"
                 src="./images/markguerrero.jpg"
                 alt="Product Designer photo"
                 class="our-team__image"
@@ -245,6 +320,7 @@
             </li>
             <li class="our-team__item">
               <img
+                srcset="./images/tomford.jpg 1x, ./images/tomford@2x.jpg 2x"
                 src="./images/tomford.jpg"
                 alt="Frontend Developer photo"
                 class="our-team__image"
@@ -287,6 +363,7 @@
             </li>
             <li class="our-team__item">
               <img
+                srcset="./images/camilagarcia.jpg 1x, ./images/camilagarcia@2x.jpg 2x"
                 src="./images/camilagarcia.jpg"
                 alt="Marketing employee photo"
                 class="our-team__image"
@@ -329,6 +406,7 @@
             </li>
             <li class="our-team__item">
               <img
+                srcset="./images/danielwilson.jpg 1x, ./images/danielwilson@2x.jpg 2x"
                 src="./images/danielwilson.jpg"
                 alt="UI Designer photo"
                 class="our-team__image"
@@ -422,7 +500,7 @@
         </div>
       </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container">
         <div class="wrapper--first">
           <a class="footer__logo" href="./index.html">
@@ -485,7 +563,8 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

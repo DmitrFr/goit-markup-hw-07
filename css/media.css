@@ -8,13 +8,111 @@
   .our-team {
     padding: 96px 15px;
   }
+  .footer__text {
+    width: auto;
+  }
+  .menu-mob__address {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main-section {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/people-mob.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .main-section {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/people-mob@2x.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .menu-mob {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .menu-mob.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .container {
     width: 738px;
   }
+  /* ========== Header ========== */
+  .header {
+    padding-top: 16px;
+    padding-bottom: 0px;
+  }
+  .menu-mob {
+    display: none;
+  }
+  .menu-mob__open-btn {
+    display: none;
+  }
+  .menu {
+    display: inline-flex;
+  }
+  .addres {
+    display: block;
+  }
+  .header nav {
+    display: block;
+  }
+  .header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header__logo {
+    margin-right: 76px;
+  }
+  .address__list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .address__link {
+    margin-right: 0;
+  }
+  .address__link-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+  }
+  .menu__list-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
   /* ========== Main section ========== */
+  .main-section {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/people-tab.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .main-section {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/people-tab@2x.jpg);
+    }
+  }
   .main-section__title {
     width: 496px;
     margin: 0 auto 36px auto;
@@ -55,13 +153,69 @@
   .customers__list {
     gap: 72px 24px;
   }
+  /* ========== Footer ========== */
+  .footer > .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+    width: 496px;
+  }
+  .footer {
+    padding: 97.5px 164px 96px 108px;
+  }
+  .wrapper--first {
+    margin: 0;
+  }
+  .footer__logo {
+    text-align: left;
+  }
+  .footer-icon__text {
+    text-align: left;
+  }
+  .footer-icon__list {
+    justify-content: flex-start;
+  }
+  .wrapper--second {
+    margin-bottom: 0;
+  }
+  .wrapper--third {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 1158px) {
   .container {
     width: 1128px;
   }
+  /* ========== Header ========== */
+  .header {
+    padding-top: 25.5px;
+  }
+  .address__list {
+    flex-direction: row;
+    gap: 40px;
+  }
+  .address__link-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
   /* ========== Main section ========== */
+  .main-section {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/people.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .main-section {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/people@2x.jpg);
+    }
+  }
+
   .main-section {
     padding-top: 188px;
     padding-bottom: 188px;
@@ -140,5 +294,24 @@
   }
   .customers {
     padding: 120px 15px;
+  }
+  /* ========== Footer ========== */
+  .footer {
+    padding: 100px 0px;
+  }
+  .footer > .container {
+    width: 1128px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0px;
+  }
+  .wrapper--first {
+    margin-right: 120px;
+  }
+  .wrapper--second {
+    margin-right: 80px;
+  }
+  .footer-form__input {
+    width: 264px;
   }
 }

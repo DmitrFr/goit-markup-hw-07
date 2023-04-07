@@ -68,10 +68,6 @@ body {
   padding-right: 15px; */
   margin: 0 auto;
 }
-/* .section {
-  padding-top: 120px;
-} */
-
 /* ========== hidden elements class ========== */
 .visually-hidden {
   position: absolute;
@@ -86,16 +82,89 @@ body {
   margin: -1px;
 }
 
+/* ========== Header Menu Mobile ========== */
+.menu-mob {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px 24px 40px 40px;
+  background-color: white;
+  overflow: auto;
+}
+.menu-mob__close-btn {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  margin-left: auto;
+  margin-bottom: 32px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid var(--color__cornflower);
+}
+.menu-mob__close-ico {
+  position: absolute;
+  top: 7.3px;
+  left: 7.2px;
+}
+.menu-mob__item:not(:last-child) {
+  margin-bottom: 40px;
+}
+.menu-mob__item-text {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--color__navy-blue);
+}
+.menu-mob__address {
+  width: 353px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
+  font-style: normal;
+}
+.menu-mob__address-item:first-child {
+  margin-bottom: 40px;
+}
+.menu-mob__address-tel {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--color__iris);
+}
+.menu-mob__address-text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--color__slate);
+}
+
 /* ========== Header ========== */
+.menu-mob__open-btn {
+  background-color: transparent;
+}
+.burger-icon {
+  stroke: var(--color__navy-blue);
+}
 .header {
+  padding-top: 25px;
+  padding-bottom: 25px;
   border-bottom: 1px solid var(--color__cornflower);
 }
-.header .container {
+.header nav {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
 }
 .header__logo {
-  margin-right: 76px;
   font-family: var(--font__secondary, 'Arial', sans-serif);
   font-weight: 800;
   font-size: 18px;
@@ -108,7 +177,7 @@ body {
   color: var(--color__iris);
 }
 .menu {
-  display: inline-flex;
+  display: none;
 }
 .menu__list {
   margin-right: 40px;
@@ -146,6 +215,9 @@ body {
   color: var(--color__iris);
 }
 .addres {
+  display: none;
+}
+.addres {
   margin-left: auto;
 }
 .address__list {
@@ -171,23 +243,26 @@ body {
 
 /* ========== Footer ========== */
 .footer {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 96.5px;
+  padding-bottom: 97px;
   background-color: var(--color__navy-blue);
 }
-.footer .container {
-  display: flex;
-}
 .wrapper--first {
-  margin-right: 120px;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-bottom: 72px;
+}
+.wrapper--second {
+  margin-bottom: 72px;
 }
 .footer__logo {
+  text-align: center;
   display: block;
   margin-bottom: 16px;
   font-family: var(--font__secondary, 'Arial', sans-serif);
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.33;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color__cloud);
@@ -202,6 +277,7 @@ body {
   color: var(--color__cornflower);
 }
 .footer-icon__text {
+  text-align: center;
   margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
@@ -211,6 +287,7 @@ body {
 }
 .footer-icon__list {
   display: flex;
+  justify-content: center;
   gap: 16px;
 }
 .footer-icon__link {
@@ -227,10 +304,8 @@ body {
 .footer-icon__link:focus {
   background-color: var(--color__green);
 }
-.wrapper--third {
-  margin-left: auto;
-}
 .subscribe {
+  text-align: center;
   margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
@@ -241,10 +316,11 @@ body {
 }
 .footer-form {
   display: flex;
+  flex-wrap: wrap;
   gap: 24px;
 }
 .footer-form__input {
-  width: 264px;
+  width: 100%;
   padding: 8px 16px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -263,6 +339,7 @@ body {
   border-color: var(--color__iris);
 }
 .footer-form button[type='submit'] {
+  margin: 0 auto;
   display: flex;
   gap: 16px;
   padding: 8px 24px;
@@ -289,8 +366,6 @@ body {
     url(../images/people.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  /* max-width: 1440px; */
-  /* height: 432px; */
   background-color: var(--color__navy-blue);
 }
 .main-section__title {
@@ -304,17 +379,6 @@ body {
   text-transform: capitalize;
   color: var(--color__white);
 }
-/* .main-section__title {
-  DESKTOP
-  width: 500px;
-  margin: 0 auto 48px auto;
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: var(--color__white);
-} */
 .main-section__button {
   margin: 0 auto;
   background-color: var(--color__iris);
@@ -572,26 +636,6 @@ body {
 .features__wrapper {
   display: none;
 }
-/* .features__wrapper {
-  DESKTOP YOBANIY
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 112px;
-  margin-bottom: 8px;
-  background-color: var(--color__cloud);
-  border-radius: 4px;
-} */
-/* .features__title {
-  DESKTOP YOBANIY
-  margin-bottom: 8px;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--color__navy-blue);
-} */
 .features__title {
   margin-bottom: 8px;
   font-weight: 700;
@@ -603,8 +647,6 @@ body {
   color: var(--color__navy-blue);
 }
 .features__text {
-  /* width: 264px;  otherwise, all blocks will be with different sizes, 
-                    not per Figma */
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -614,24 +656,6 @@ body {
 .our-work {
   display: none;
 }
-/* .our-work {
-  padding-bottom: 120px;
-}
-.our-work__title {
-  margin-bottom: 72px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: var(--color__navy-blue);
-}
-.our-work__list {
-  display: flex;
-  justify-content: space-between;
-} */
-
 /* ========== Our team ========== */
 .our-team > .container {
   width: 264px;
