@@ -57,6 +57,10 @@
         url(../images/people-mob@2x.jpg);
     }
   }
+  .header{ 
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
