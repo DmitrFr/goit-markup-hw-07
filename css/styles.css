@@ -64,8 +64,8 @@ body {
 .container {
   width: 100%;
   /* max-width: 1158px; */
-  /* padding-left: 15px;
-  padding-right: 15px; */
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
 }
 /* ========== hidden elements class ========== */
@@ -124,7 +124,6 @@ body {
 }
 .menu-mob__address {
   width: 353px;
-  margin-left: auto;
   margin-right: auto;
   margin-bottom: 48px;
   font-style: normal;
@@ -147,6 +146,10 @@ body {
   letter-spacing: 0.02em;
   color: var(--color__slate);
 }
+.logo__list--mob {
+  display: flex;
+  gap: 56px;
+}
 
 /* ========== Header ========== */
 .menu-mob__open-btn {
@@ -156,8 +159,6 @@ body {
   stroke: var(--color__navy-blue);
 }
 .header {
-  padding-top: 25px;
-  padding-bottom: 25px;
   border-bottom: 1px solid var(--color__cornflower);
 }
 .header nav {
@@ -217,9 +218,6 @@ body {
 .addres {
   display: none;
 }
-.addres {
-  margin-left: auto;
-}
 .address__list {
   display: flex;
 }
@@ -243,13 +241,13 @@ body {
 
 /* ========== Footer ========== */
 .footer {
-  padding-top: 96.5px;
+  padding-top: 97px;
   padding-bottom: 97px;
   background-color: var(--color__navy-blue);
 }
 .wrapper--first {
-  margin-left: 80px;
-  margin-right: 80px;
+  /* margin-left: 80px;
+  margin-right: 80px; */
   margin-bottom: 72px;
 }
 .wrapper--second {
@@ -271,6 +269,7 @@ body {
   color: var(--color__iris);
 }
 .footer__text {
+  margin: 0 auto;
   width: 264px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -501,6 +500,7 @@ body {
   margin-bottom: 16px;
 }
 .modal-form__wrapper {
+  display: block;
   position: relative;
 }
 .modal-form__wrapper svg {
@@ -626,7 +626,9 @@ body {
 
 /* ========== Features/Heroes section ========== */
 .heroes {
-  padding: 96px 15px 96px 15px;
+  /* padding: 96px 15px 96px 15px; */
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 .features {
   display: flex;
@@ -657,11 +659,12 @@ body {
   display: none;
 }
 /* ========== Our team ========== */
-.our-team > .container {
+/* .our-team > .container {
   width: 264px;
-}
+} */
 .our-team {
-  padding: 96px 82px;
+  padding-top: 96px;
+  padding-bottom: 96px;
   background-color: var(--color__cloud);
 }
 .our-team__title {
@@ -727,7 +730,8 @@ body {
 
 /* ========== Customers ========== */
 .customers {
-  padding: 96px 15px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 .customers__title {
   margin-bottom: 72px;
